@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>DCD-GoogleCode-Prettify</name>
+	<author>Philipp Sengelmann</author>
+	<creationDate>May 2015</creationDate>
+	<copyright>Copyright (C) 2015 - 2025 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>philipp@dcd-hamburg.de</authorEmail>
+	<authorUrl>www.dcd-hamburg.de</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_DCD_GCPRETTIFY_DESCRIPTION</description>
+	<files>
+		<filename module="mod_dcdgcprettify">mod_dcdgcprettify.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>google-code-prettify</folder>
+		<filename>mod_dcdgcprettify.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_dcdgcprettify.ini</language>
+		<language tag="en-GB">en-GB.mod_dcdgcprettify.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="theme" type="list" default="0" label="Theme" description="Choose a theme">
+					<option value="default">Default</option>
+					<option value="desert">Desert</option>
+					<option value="sunburst">Sunburst</option>
+					<option value="sons-of-obsidian">Sons Of Obsidian</option>
+					<option value="doxy">Doxy</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
